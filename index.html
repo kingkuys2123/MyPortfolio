@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kyle Matthew Quitco | Portfolio</title>
+
+    <!-- Favicon (optional, can be customized later) -->
+    <link rel="icon" href="assets/self_portrait_1.jpg" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <div class="sidebar-inner">
+          <div class="brand">
+            <div class="brand-avatar">
+              <img
+                src="assets/self_portrait_3.jpg"
+                alt="Profile picture of Kyle Matthew Quitco"
+              />
+            </div>
+            <div class="brand-text">
+              <h1 class="brand-name">KingKuys2123's</h1>
+              <p class="brand-role">Portfolio</p>
+            </div>
+          </div>
+
+          <nav class="nav" role="navigation" aria-label="Main">
+            <a
+              href="#home"
+              class="nav-link active"
+              data-nav="home"
+              aria-current="page"
+            >
+              <span class="nav-index">01</span>
+              <span class="nav-label">Home</span>
+            </a>
+            <a href="#about" class="nav-link" data-nav="about">
+              <span class="nav-index">02</span>
+              <span class="nav-label">About</span>
+            </a>
+            <a href="#projects" class="nav-link" data-nav="projects">
+              <span class="nav-index">03</span>
+              <span class="nav-label">Projects</span>
+            </a>
+            <a href="#contact" class="nav-link" data-nav="contact">
+              <span class="nav-index">04</span>
+              <span class="nav-label">Contact</span>
+            </a>
+          </nav>
+
+          <div class="sidebar-footer">
+            <nav class="socials" aria-label="Social links">
+              <a
+                href="https://www.facebook.com/KingKuys2123/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+                class="social-link"
+              >
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/kingkuys2123/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                class="social-link"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/kyle-matthew-quitco/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+                class="social-link"
+              >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a
+                href="https://github.com/kingkuys2123/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+                class="social-link"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+            </nav>
+            <button class="sidebar-toggle" aria-label="Toggle navigation">
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="content">
+        <div class="content-inner">
+          <!-- HOME -->
+          <section id="home" class="section section-home reveal">
+            <div class="home-inner">
+              <div class="home-text">
+                <h2 class="home-heading">Hi, I'm<br />Kyle Matthew Quitco</h2>
+                <p class="home-role">
+                  <span id="typing-text"></span><span class="typing-cursor">|</span>
+                </p>
+                <div class="home-actions">
+                  <button class="btn primary ripple" data-scroll-target="#projects">
+                    My Projects
+                  </button>
+                  <button class="btn ghost ripple" data-scroll-target="#contact">
+                    Contact Me
+                  </button>
+                  <a href="files/KyleMatthewQuitco_Resume.pdf" download class="btn ghost ripple" id="resume-btn">
+                    <i class="fas fa-download"></i> Download Resume
+                  </a>
+                </div>
+
+                <!-- Quick Stats -->
+                <div class="home-stats">
+                  <div class="stat-card">
+                    <div class="stat-icon"><i class="fas fa-code"></i></div>
+                    <div class="stat-content">
+                      <div class="stat-number" data-target="3">0</div>
+                      <div class="stat-label">Projects</div>
+                    </div>
+                  </div>
+                  <div class="stat-card">
+                    <div class="stat-icon"><i class="fas fa-tools"></i></div>
+                    <div class="stat-content">
+                      <div class="stat-number" data-target="15">0</div>
+                      <div class="stat-label">Technologies</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="home-visual">
+                <div class="home-photo-frame">
+                  <div class="home-photo-border"></div>
+                  <img
+                    src="assets/self_portrait_2.jfif"
+                    alt="Profile picture of Kyle Matthew Quitco"
+                    class="home-photo"
+                  />
+                </div>
+              </div>
+            </div>
+          </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="section section-about reveal">
+          <div class="section-divider"></div>
+          <header class="section-header">
+            <h3 class="tech-stack-title">ABOUT</h3>
+          </header>
+
+          <div class="about-grid">
+            <div class="about-text">
+              <h1>ABOUT ME</h1>
+              <br>
+              <p>
+                I’m a Web Application Developer with hands-on full-stack experience, specializing in backend 
+                development. I enjoy transforming complex problems into clean, efficient, and scalable solutions.
+                <br>
+                <br>
+                My work focuses on building applications that are not only functional but also maintainable and 
+                user-friendly. I aim to enhance the user experience while delivering reliable, high-quality code. 
+                I’m passionate about learning new technologies and improving my skills, so I can contribute effectively 
+                to projects and help bring ideas to life.
+              </p>
+            </div>
+            <div class="about-photo">
+              <div class="about-photo-frame">
+                <img
+                  src="assets/self_portrait_1.jpg"
+                  alt="Profile picture of Kyle Matthew Quitco"
+                />
+              </div>
+            </div>
+          </div>
+
+          <br>
+
+          <!-- Skills Section with Progress Bars -->
+          <div class="skills-section">
+            <h3 class="tech-stack-title">Skills & Expertise</h3>
+            <br />
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name">Backend Development</span>
+                  <span class="skill-percent">90%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-percent="90"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name">Frontend Development</span>
+                  <span class="skill-percent">75%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-percent="75"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name">Database Design</span>
+                  <span class="skill-percent">80%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-percent="85"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name">UI/UX Design</span>
+                  <span class="skill-percent">70%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-percent="70"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <br>
+
+          <div class="tech-stack">
+            <h3 class="tech-stack-title">Tech Stack</h3>
+
+            <br />
+
+            <!-- Clean vertical bullet list with icons -->
+            <div class="tech-list">
+              <div class="tech-group">
+                <p class="tech-group-label">Frontend</p>
+                <ul>
+                  <li><i class="fab fa-html5"></i> HTML</li>
+                  <li><i class="fab fa-css3-alt"></i> CSS</li>
+                  <li><i class="fab fa-js"></i> JavaScript</li>
+                  <li><i class="fab fa-react"></i> ReactJS</li>
+                  <li><i class="fas fa-bolt"></i> Vite</li>
+                </ul>
+              </div>
+
+              <div class="tech-group">
+                <p class="tech-group-label">Backend</p>
+                <ul>
+                  <li><i class="fas fa-leaf"></i> Spring Boot</li>
+                  <li><i class="fab fa-java"></i> Java</li>
+                  <li><i class="fab fa-python"></i> Python</li>
+                  <li><i class="fab fa-python"></i> Django</li>
+                  <li><i class="fas fa-database"></i> MySQL</li>
+                  <li><i class="fas fa-paper-plane"></i> Postman</li>
+                  <li><i class="fas fa-server"></i> Workbench</li>
+                  <li><i class="fas fa-server"></i> XAMPP</li>
+                </ul>
+              </div>
+
+              <div class="tech-group">
+                <p class="tech-group-label">Others</p>
+                <ul>
+                  <li><i class="fab fa-figma"></i> Figma</li>
+                  <li><i class="fas fa-palette"></i> Canva</li>
+                  <li><i class="fas fa-code"></i> IntelliJ</li>
+                  <li><i class="fas fa-code"></i> VSCode</li>
+                  <li><i class="fab fa-git-alt"></i> Git</li>
+                  <li><i class="fas fa-image"></i> Gimp</li>
+                  <li><i class="fas fa-sticky-note"></i> Notion</li>
+                  <li><i class="fas fa-tasks"></i> ClickUp</li>
+                  <li><i class="fab fa-trello"></i> Trello</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects" class="section section-projects reveal">
+          <div class="section-divider"></div>
+          <header class="section-header">
+            <h3 class="tech-stack-title">PROJECTS</h3>
+          </header>
+
+          <br />
+
+          <div class="projects-grid">
+            <!-- Project 1 -->
+            <article class="project-card">
+              <div class="project-media">
+                <div class="project-carousel" data-carousel>
+                  <div class="project-slide is-active">
+                    <img
+                      src="https://camo.githubusercontent.com/394e3f21970453b76ed1f3d8d2f3d20ed3f988be327eeedae9eaa43a254a9ed2/68747470733a2f2f692e696d6775722e636f6d2f68514249554c702e706e67"
+                      alt="SerV-IT Manager dashboard preview"
+                    />
+                  </div>
+                  <div class="project-slide">
+                    <img
+                      src="https://camo.githubusercontent.com/b016491b6696234433d51b538168a2107ec392e6b7a05813f8d497efe5c1aa75/68747470733a2f2f692e696d6775722e636f6d2f6b6b6b524c36642e706e67"
+                      alt="SerV-IT Manager ticket list preview"
+                    />
+                  </div>
+                  <div class="project-slide">
+                    <img
+                      src="https://camo.githubusercontent.com/1a21a87ad02ccfbd059a26f69ef916efafcb0f4cdc3b9b79218bcc13fb07bc12/68747470733a2f2f692e696d6775722e636f6d2f65725579546a632e706e67"
+                      alt="SerV-IT Manager report preview"
+                    />
+                  </div>
+                </div>
+                <button
+                  class="project-nav prev"
+                  type="button"
+                  data-carousel-prev
+                  aria-label="Previous SerV-IT Manager screenshot"
+                >
+                  <i class="fas fa-chevron-left"></i>
+                </button>
+                <button
+                  class="project-nav next"
+                  type="button"
+                  data-carousel-next
+                  aria-label="Next SerV-IT Manager screenshot"
+                >
+                  <i class="fas fa-chevron-right"></i>
+                </button>
+              </div>
+              <div class="project-header">
+                <h3 class="project-title">SerV-IT Manager</h3>
+                <span class="project-period">Jan 2025 – Present</span>
+              </div>
+              <p class="project-role">
+                Full-stack Developer <span class="muted">(Backend Focused)</span>
+              </p>
+              <div class="project-tech-badges">
+                <span class="tech-badge" title="Java"><i class="fab fa-java"></i> Java</span>
+                <span class="tech-badge" title="Spring Boot"><i class="fas fa-leaf"></i> Spring Boot</span>
+                <span class="tech-badge" title="JavaScript"><i class="fab fa-js"></i> JavaScript</span>
+                <span class="tech-badge" title="HTML"><i class="fab fa-html5"></i> HTML</span>
+                <span class="tech-badge" title="CSS"><i class="fab fa-css3-alt"></i> CSS</span>
+                <span class="tech-badge" title="React"><i class="fab fa-react"></i> React</span>
+                <span class="tech-badge" title="Vite"><i class="fas fa-bolt"></i> Vite</span>
+              </div>
+              <p class="project-description">
+                Web-based IT repair management system automating repair tracking.
+              </p>
+              <div class="project-footer">
+                <span class="project-github muted">GitHub: Private</span>
+              </div>
+            </article>
+
+            <!-- Project 2 -->
+            <article class="project-card">
+              <div class="project-media">
+                <div class="project-carousel" data-carousel>
+                  <div class="project-slide is-active">
+                    <img
+                      src="https://camo.githubusercontent.com/d1c480048edc4e4893c172cf39a85f7d2a74c6533064266bb92ee28c4f36fbe9/68747470733a2f2f692e696d6775722e636f6d2f495751417358312e706e67"
+                      alt="WUE events overview preview"
+                    />
+                  </div>
+                  <div class="project-slide">
+                    <img
+                      src="https://camo.githubusercontent.com/ae91950943652a1c0ee6d0af6de6677ec393981aaca58181dc9ce20034f768b8/68747470733a2f2f692e696d6775722e636f6d2f786962647134512e706e67"
+                      alt="WUE booking interface preview"
+                    />
+                  </div>
+                </div>
+                <button
+                  class="project-nav prev"
+                  type="button"
+                  data-carousel-prev
+                  aria-label="Previous WUE screenshot"
+                >
+                  <i class="fas fa-chevron-left"></i>
+                </button>
+                <button
+                  class="project-nav next"
+                  type="button"
+                  data-carousel-next
+                  aria-label="Next WUE screenshot"
+                >
+                  <i class="fas fa-chevron-right"></i>
+                </button>
+              </div>
+              <div class="project-header">
+                <h3 class="project-title">WUE (Wild-Up Events)</h3>
+                <span class="project-period">Oct 2024 – Dec 2024</span>
+              </div>
+              <p class="project-role">
+                Full-stack Developer, Project Lead
+              </p>
+              <div class="project-tech-badges">
+                <span class="tech-badge" title="Java"><i class="fab fa-java"></i> Java</span>
+                <span class="tech-badge" title="Spring Boot"><i class="fas fa-leaf"></i> Spring Boot</span>
+                <span class="tech-badge" title="HTML"><i class="fab fa-html5"></i> HTML</span>
+                <span class="tech-badge" title="CSS"><i class="fab fa-css3-alt"></i> CSS</span>
+                <span class="tech-badge" title="JavaScript"><i class="fab fa-js"></i> JavaScript</span>
+                <span class="tech-badge" title="React"><i class="fab fa-react"></i> React</span>
+                <span class="tech-badge" title="Vite"><i class="fas fa-bolt"></i> Vite</span>
+              </div>
+              <p class="project-description">
+                Web platform for campus-based event management with booking,
+                payments, feedback, and analytics.
+              </p>
+              <div class="project-footer">
+                <a
+                  href="https://github.com/kingkuys2123/WUE"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-link"
+                >
+                  <span>View on GitHub</span>
+                  <i class="fas fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </article>
+
+            <!-- Project 3 -->
+            <article class="project-card">
+              <div class="project-media">
+                <div class="project-carousel" data-carousel>
+                  <div class="project-slide is-active">
+                    <img
+                      src="https://camo.githubusercontent.com/1603d853a58b8908e0ececcc4295bc79e3a12d477ae64f89380896da1273a140/68747470733a2f2f692e696d6775722e636f6d2f654445544a6f442e706e67"
+                      alt="WAS dashboard preview"
+                    />
+                  </div>
+                  <div class="project-slide">
+                    <img
+                      src="https://camo.githubusercontent.com/adfe830122bc50f67e6abc66acee420b8114c29b40ab046d1bd334449a602784/68747470733a2f2f692e696d6775722e636f6d2f696671416a36622e706e67"
+                      alt="WAS tasks interface preview"
+                    />
+                  </div>
+                </div>
+                <button
+                  class="project-nav prev"
+                  type="button"
+                  data-carousel-prev
+                  aria-label="Previous WAS screenshot"
+                >
+                  <i class="fas fa-chevron-left"></i>
+                </button>
+                <button
+                  class="project-nav next"
+                  type="button"
+                  data-carousel-next
+                  aria-label="Next WAS screenshot"
+                >
+                  <i class="fas fa-chevron-right"></i>
+                </button>
+              </div>
+              <div class="project-header">
+                <h3 class="project-title">WAS (Wildcats Academic Sync)</h3>
+                <span class="project-period">Mar 2024 – May 2024</span>
+              </div>
+              <p class="project-role">
+                Full-stack Developer, Project Lead
+              </p>
+              <div class="project-tech-badges">
+                <span class="tech-badge" title="Python"><i class="fab fa-python"></i> Python</span>
+                <span class="tech-badge" title="Django"><i class="fab fa-python"></i> Django</span>
+                <span class="tech-badge" title="HTML"><i class="fab fa-html5"></i> HTML</span>
+                <span class="tech-badge" title="CSS"><i class="fab fa-css3-alt"></i> CSS</span>
+                <span class="tech-badge" title="JavaScript"><i class="fab fa-js"></i> JavaScript</span>
+              </div>
+              <p class="project-description">
+                User-friendly web app for students to organize academic
+                responsibilities.
+              </p>
+              <div class="project-footer">
+                <a
+                  href="https://github.com/kingkuys2123/WAS"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-link"
+                >
+                  <span>View on GitHub</span>
+                  <i class="fas fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="section section-contact reveal">
+          <div class="section-divider"></div>
+          <header class="section-header">
+            <h3 class="tech-stack-title">CONTACT</h3>
+          </header>
+
+          <br />
+
+          <div class="contact-grid">
+            <!-- Left: Info -->
+            <div class="contact-info">
+
+              <ul class="contact-list">
+                <li>
+                  <div class="contact-item">
+                    <div class="contact-icon">
+                      <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="contact-details">
+                      <span class="label">Phone</span>
+                      <a href="tel:+639682049428">+63 968 204 9428</a>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="contact-item">
+                    <div class="contact-icon">
+                      <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-details">
+                      <span class="label">Email</span>
+                      <a href="mailto:kylequitco3212@gmail.com"
+                        >kylequitco3212@gmail.com</a
+                      >
+                    </div>
+                  </div>
+                </li>
+              </ul>
+
+              <div class="contact-socials">
+                <p class="label">Social</p>
+                <div class="socials">
+                  <a
+                    href="https://www.facebook.com/KingKuys2123/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Facebook"
+                    class="social-link"
+                  >
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a
+                    href="https://www.instagram.com/kingkuys2123/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Instagram"
+                    class="social-link"
+                  >
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/kyle-matthew-quitco/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="LinkedIn"
+                    class="social-link"
+                  >
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                  <a
+                    href="https://github.com/kingkuys2123/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="GitHub"
+                    class="social-link"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: Form -->
+            <div class="contact-form-wrapper">
+              <form id="contact-form" class="contact-form">
+                <div class="form-row">
+                  <div class="form-field floating-label">
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      placeholder=" "
+                      required
+                      autocomplete="name"
+                    />
+                    <label for="name">Name</label>
+                  </div>
+                  <div class="form-field floating-label">
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder=" "
+                      required
+                      autocomplete="email"
+                    />
+                    <label for="email">Email</label>
+                  </div>
+                </div>
+
+                <div class="form-field floating-label">
+                  <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    placeholder=" "
+                    required
+                  />
+                  <label for="subject">Subject</label>
+                </div>
+
+                <div class="form-field floating-label">
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="4"
+                    placeholder=" "
+                    required
+                  ></textarea>
+                  <label for="message">Message</label>
+                </div>
+
+                <button type="submit" class="btn primary full-width ripple">
+                  Send Message
+                </button>
+
+                <div class="form-message" id="form-message"></div>
+
+                <p class="form-note muted">
+                  This form uses your email client via
+                  <span class="mono">mailto:</span> for sending.
+                </p>
+              </form>
+            </div>
+          </div>
+        </section>
+
+        <footer class="footer">
+          <p>
+            &copy; <span id="year"></span> Kyle Matthew M. Quitco. All rights
+            reserved.
+          </p>
+        </footer>
+        </div>
+      </main>
+    </div>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress" id="scroll-progress"></div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
+
+
