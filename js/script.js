@@ -1,4 +1,3 @@
-// Smooth scroll helper
 function smoothScrollTo(targetSelector) {
   const target = document.querySelector(targetSelector);
   if (!target) return;
@@ -10,12 +9,11 @@ function smoothScrollTo(targetSelector) {
   const behavior = prefersReducedMotion ? "auto" : "smooth";
 
   window.scrollTo({
-    top: target.offsetTop - 72, // compensate for mobile header
+    top: target.offsetTop - 72,
     behavior,
   });
 }
 
-// Setup nav links + buttons scrolling
 function initScrolling() {
   const navLinks = document.querySelectorAll(".nav-link");
   const scrollButtons = document.querySelectorAll("[data-scroll-target]");
@@ -41,7 +39,6 @@ function initScrolling() {
   });
 }
 
-// Sidebar mobile toggle
 function initSidebarToggle() {
   const toggle = document.querySelector(".sidebar-toggle");
   const nav = document.querySelector(".nav");
@@ -64,11 +61,9 @@ function closeMobileNav() {
   nav.classList.remove("is-open");
 }
 
-// Intersection observer for reveal animations
 function initRevealOnScroll() {
   const revealEls = document.querySelectorAll(".reveal");
   if (!("IntersectionObserver" in window) || revealEls.length === 0) {
-    // Fallback: make everything visible
     revealEls.forEach((el) => el.classList.add("visible"));
     return;
   }
@@ -90,7 +85,6 @@ function initRevealOnScroll() {
   revealEls.forEach((el) => observer.observe(el));
 }
 
-// Active nav state based on scroll
 function initActiveNavOnScroll() {
   const sections = document.querySelectorAll("section[id]");
   const navLinks = document.querySelectorAll(".nav-link");
@@ -123,7 +117,6 @@ function initActiveNavOnScroll() {
   window.addEventListener("scroll", updateActiveNav);
 }
 
-// Contact form: open mailto with data
 function initContactForm() {
   const form = document.getElementById("contact-form");
   const formMessage = document.getElementById("form-message");
@@ -136,7 +129,6 @@ function initContactForm() {
       <span>${text}</span>
     `;
 
-    // Hide message after 5 seconds
     setTimeout(() => {
       formMessage.classList.remove("show");
       setTimeout(() => {
@@ -195,24 +187,20 @@ function initContactForm() {
       fullSubject
     )}&body=${encodeURIComponent(bodyLines.join("\n"))}`;
 
-    // Show success message
     showMessage("success", "Opening your email client...");
 
-    // Small delay to show message before opening email client
     setTimeout(() => {
       window.location.href = mailtoUrl;
     }, 500);
   });
 }
 
-// Footer year
 function initYear() {
   const yearEl = document.getElementById("year");
   if (!yearEl) return;
   yearEl.textContent = new Date().getFullYear().toString();
 }
 
-// Simple project image carousels
 function initProjectCarousels() {
   const carousels = document.querySelectorAll("[data-carousel]");
   if (!carousels.length) return;
@@ -245,7 +233,6 @@ function initProjectCarousels() {
   });
 }
 
-// Typing animation effect
 function initTypingEffect() {
   const typingEl = document.getElementById("typing-text");
   if (!typingEl) return;
@@ -270,12 +257,12 @@ function initTypingEffect() {
     }
 
     if (!isDeleting && charIndex === currentText.length) {
-      typingSpeed = 2000; // pause at end
+      typingSpeed = 2000; 
       isDeleting = true;
     } else if (isDeleting && charIndex === 0) {
       isDeleting = false;
       textIndex = (textIndex + 1) % texts.length;
-      typingSpeed = 500; // pause before next word
+      typingSpeed = 500; 
     }
 
     setTimeout(type, typingSpeed);
@@ -284,7 +271,6 @@ function initTypingEffect() {
   type();
 }
 
-// Scroll progress indicator
 function initScrollProgress() {
   const progressBar = document.getElementById("scroll-progress");
   if (!progressBar) return;
@@ -300,7 +286,6 @@ function initScrollProgress() {
   updateProgress();
 }
 
-// Animate skill bars on scroll
 function initSkillBars() {
   const skillBars = document.querySelectorAll(".skill-progress");
   if (!skillBars.length) return;
@@ -321,7 +306,6 @@ function initSkillBars() {
   skillBars.forEach((bar) => observer.observe(bar));
 }
 
-// Animated statistics counters
 function initAnimatedStats() {
   const statNumbers = document.querySelectorAll(".stat-number");
   if (!statNumbers.length) return;
@@ -354,22 +338,17 @@ function initAnimatedStats() {
   statNumbers.forEach((stat) => observer.observe(stat));
 }
 
-// Resume download handler
 function initResumeDownload() {
   const resumeBtn = document.getElementById("resume-btn");
   if (!resumeBtn) return;
 
   resumeBtn.addEventListener("click", (e) => {
-    // If resume.pdf doesn't exist, show a message
-    // You can replace this with actual resume file path
     const resumePath = resumeBtn.getAttribute("href");
     
-    // Optional: Add analytics or tracking here
     console.log("Resume download initiated");
   });
 }
 
-// Back to Top button
 function initBackToTop() {
   const backToTopBtn = document.getElementById("back-to-top");
   if (!backToTopBtn) return;
@@ -393,7 +372,6 @@ function initBackToTop() {
   toggleBackToTop();
 }
 
-// Add ripple effect to all buttons
 function initRippleEffects() {
   const buttons = document.querySelectorAll(".btn.ripple");
   
@@ -419,7 +397,6 @@ function initRippleEffects() {
   });
 }
 
-// Init
 window.addEventListener("DOMContentLoaded", () => {
   initScrolling();
   initSidebarToggle();

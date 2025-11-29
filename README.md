@@ -1,7 +1,5 @@
 <!--suppress ALL -->
 
-<!-- Title  -->
-
 <div align="center">
     <h3>My Portfolio</h3>
 </div>
@@ -9,8 +7,6 @@
 
 
 ---
-
-<!-- About -->
 
 ## About
 
@@ -21,8 +17,6 @@
 </div>
 
 ---
-
-<!-- Tech Stack -->
 
 ## Tech Stack
 
@@ -38,8 +32,6 @@
 </table>
 
 ---
-
-<!-- Team -->
 
 ## Developer
 
@@ -61,8 +53,6 @@
 </table>
 
 ---
-
-<!-- License -->
 
 ## Screenshots
 
