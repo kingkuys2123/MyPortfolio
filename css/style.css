@@ -1053,6 +1053,22 @@ ul {
   margin-bottom: 8px;
 }
 
+.contact-info .links-quick-block {
+  margin-top: 24px;
+}
+
+.contact-info .links-quick-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.contact-info .quick-link-btn {
+  width: 100%;
+  justify-content: flex-start;
+}
+
 .contact-form-wrapper {
   border-radius: 20px;
   border: 1px solid #1e1e1e;
