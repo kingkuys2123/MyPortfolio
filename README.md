@@ -29,12 +29,6 @@
       <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" />
     </td>
   </tr>
-  <tr>
-    <td><strong>Back End</strong></td>
-    <td>
-      N/A
-    </td>
-  </tr>
 </table>
 
 <br>
