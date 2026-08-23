@@ -12,7 +12,7 @@
 
 <div>
 <p>
-    Kyle Matthew M. Quitco's personal portfolio static website showcasing his skills, projects, and experiences as a full-stack web developer.
+    Kyle Matthew M. Quitco's personal static portfolio website showcasing his skills, projects, and experiences as a full-stack web developer.
 </p>
 </div>
 
@@ -52,7 +52,7 @@
       <a href="https://github.com/kingkuys2123">Quitco, Kyle Matthew M.</a>
     </td>
     <td align="center">
-      Fullstack Developer <br/>
+      The Developer Himself <br/>
     </td>
   </tr>
 
