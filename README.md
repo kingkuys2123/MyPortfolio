@@ -1,12 +1,12 @@
 <!--suppress ALL -->
 
-<div align="center">
-    <h3>My Portfolio</h3>
+<div>
+    <h1 align="center">
+      My Personal Portfolio
+    </h1>
 </div>
 
-
-
----
+<br>
 
 ## About
 
@@ -16,7 +16,7 @@
 </p>
 </div>
 
----
+<br>
 
 ## Tech Stack
 
@@ -29,17 +29,25 @@
       <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" />
     </td>
   </tr>
+  <tr>
+    <td><strong>Back End</strong></td>
+    <td>
+      N/A
+    </td>
+  </tr>
 </table>
 
----
+<br>
 
-## Developer
+## Team
 
 <table>
   <tr>
     <th>Profile Picture</th>
     <th>Full Name</th>
+    <th>Role</th>
   </tr>
+
   <tr>
     <td align="center">
       <a href="https://github.com/kingkuys2123">
@@ -49,11 +57,17 @@
     <td align="center">
       <a href="https://github.com/kingkuys2123">Quitco, Kyle Matthew M.</a>
     </td>
+    <td align="center">
+      Fullstack Developer <br/>
+    </td>
   </tr>
+
 </table>
 
----
+<br>
 
 ## Screenshots
 
-TBA
+<img width="1600" height="752" alt="image" src="https://github.com/user-attachments/assets/f7f90003-2a12-41c0-9333-87fad41708d6" />
+<img width="1600" height="752" alt="image" src="https://github.com/user-attachments/assets/a1ebc329-62f3-405e-a4eb-c33b8a5243ff" />
+
